@@ -1,13 +1,19 @@
 openapi: "3.0.3"
 info:
-  title: "Application API"
-  description: "Application API"
+  title: "Demo currency API Client"
+  description: "Dummy Client for Frankfurter API"
   version: "1.0.0"
+  termsOfService: "http://swagger.io/terms/"
+  contact:
+    name: "Antonio Masotti"
+    email: "toniomasotti<at>gmail<dot>com"
+    url: "https://bikeleasing.de"
 servers:
-  - url: "http://0.0.0.0:8080"
+  - url: "http://localhost:8080"
 paths:
   /:
     get:
+      operationId: "getHelloWorld"
       description: "Hello World!"
       responses:
         "200":
