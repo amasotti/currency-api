@@ -1,0 +1,8 @@
+openapi: "3.1.0"
+info:
+  title: "frankfurter_currency_api_demo API"
+  description: "frankfurter_currency_api_demo API"
+  version: "1.0.0"
+servers:
+- url: "https://frankfurter_currency_api_demo"
+paths: {}
