@@ -1,13 +1,15 @@
 # Changelog
 
 Enjoy the magic of git cliff. All the git history of this repo in a beautified markdown format 🫶
-## [unreleased]
+## [0.3.1] - 2024-05-03
 
-[Compare with last version](https://github.com/amasotti/currency-api/compare/e03298dedf2a140e10db3aa885be2a1bc4de1d62..)
+[Compare with last version](https://github.com/amasotti/currency-api/compare/e03298dedf2a140e10db3aa885be2a1bc4de1d62..1978648a610741581853b94ef6f71e51ff3cf9bf)
 ### 🐛 Bug Fixes
 
 
 - Correct URL tera template ([0a41004](https://github.com/amasotti/currency-api/commit/0a410047bb4ec9821cec8933c5941e17e78d6592))
+
+- Fix changelog generation (tera template) ([1978648](https://github.com/amasotti/currency-api/commit/1978648a610741581853b94ef6f71e51ff3cf9bf))
 
 ### ⚙️ Miscellaneous Tasks
 
