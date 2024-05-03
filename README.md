@@ -1,16 +1,16 @@
 # Demo Currency App 
 
-__dummy project to demo use of git cliff__
+__dummy project to demo / experiment with git cliff__
 
 __date:__ May 2024
 
 ## Description
 
-The project is a (very rudimental) currency converter app that uses the Frankfurter API 
-to get the latest exchange rates. The app is built using Ktor, a Kotlin framework for building lightweight
+The project is a (very rudimentary) currency converter app that uses the Frankfurter API 
+to get the exchange rates. The app is built using Ktor, a Kotlin framework for building lightweight
 web applications.
 
-The API itself is just kind of "Hello-World" project, what I wanted to test here is
+The API itself is just a kind of "Hello-World" project; what I really wanted to test here is
 the `git-cliff` tool, which is a tool to generate changelogs from git history.
 
 ## Resources

@@ -2,7 +2,15 @@
 
 Enjoy the magic of git cliff. All the git history of this repo in a beautified markdown format 🫶 
 
-## [0.1.0] - <small>2024-05-03</small>
+## 0.2.0 - <small>2024-05-03</small>
+
+[1973e1c](1973e1c99a07b38f097652f8b37d93655178af81)...[d53e99d](d53e99db6f3be7aedb3b5711d6f3e06c81864ae9)
+
+### 🚀 Features
+
+- Add git-cliff ([d53e99d](d53e99db6f3be7aedb3b5711d6f3e06c81864ae9))
+
+## 0.1.0 - <small>2024-05-03</small>
 
 [8d5d418](8d5d41817a95cf568aa2198ea663bebcd88dbcd3)...[1973e1c](1973e1c99a07b38f097652f8b37d93655178af81)
 
@@ -16,7 +24,7 @@ Enjoy the magic of git cliff. All the git history of this repo in a beautified m
 
 - Setup linter rules, cleanup routing ([1973e1c](1973e1c99a07b38f097652f8b37d93655178af81))
 
-## [0.0.1] - <small>2024-05-03</small>
+## 0.0.1 - <small>2024-05-03</small>
 
 ### 🚀 Features
 
