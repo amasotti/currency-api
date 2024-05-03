@@ -23,6 +23,7 @@ dependencies {
     implementation(libs.ktor.server.default.headers)
     implementation(libs.ktor.server.openapi)
     implementation(libs.ktor.server.netty)
+    implementation(libs.ktor.client.core)
     implementation(libs.logback.classic)
     testImplementation(libs.ktor.server.tests)
     testImplementation(libs.kotlin.test.junit)
