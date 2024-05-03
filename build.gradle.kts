@@ -30,6 +30,7 @@ dependencies {
     implementation(libs.logback.classic)
     testImplementation(libs.ktor.server.tests)
     testImplementation(libs.kotlin.test.junit)
+    testImplementation(libs.ktor.mock.engine)
 }
 
 tasks.named("check") {
