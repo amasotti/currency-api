@@ -31,3 +31,7 @@ dependencies {
     testImplementation(libs.ktor.server.tests)
     testImplementation(libs.kotlin.test.junit)
 }
+
+tasks.named("check") {
+    dependsOn("detekt")
+}
