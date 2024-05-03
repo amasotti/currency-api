@@ -1,4 +1,5 @@
 # Demo Currency App 
+[![Tag & Changelog](https://github.com/amasotti/currency-api/actions/workflows/ci.yml/badge.svg)](https://github.com/amasotti/currency-api/actions/workflows/ci.yml)
 
 __dummy project to demo / experiment with git cliff__
 
