@@ -9,22 +9,30 @@
 # changelog header
 header = """
 # Changelog\n
-Enjoy the magic of git cliff. All the git history of this repo in a beautified markdown format 🫶 \n
+Enjoy the magic of git cliff. All the git history of this repo in a beautified markdown format 🫶
 """
 # template for the changelog body
 # https://keats.github.io/tera/docs/#introduction
 body = """
 {% if version %}\
-    ## {{ version | trim_start_matches(pat="v") }} - <small>{{ timestamp | date(format="%Y-%m-%d") }}</small>
+    ## [{{ version | trim_start_matches(pat="v") }}] - {{ timestamp | date(format="%Y-%m-%d") }}
 {% else %}\
     ## [unreleased]
 {% endif %}\
+{% if previous %}\
+    {% if previous.commit_id %}
+      [Compare with last version](https://github.com/amasotti/currency-api/compare/{{ previous.commit_id }}..{{ commit_id }})\
+    {% endif %}\
+{% endif %}\
+\
 {% for group, commits in commits | group_by(attribute="group") %}
     ### {{ group | striptags | trim | upper_first }}
     {% for commit in commits %}
-        - {% if commit.scope %}*({{ commit.scope }})* {% endif %}\
-            {% if commit.breaking %}[**breaking**] {% endif %}\
-            {{ commit.message | upper_first }} ([{{ commit_id | truncate(length=7, end="") }}]({{ commit_id }}))\
+      {% if commit.id %}
+          - {% if commit.scope %}*({{ commit.scope }})* {% endif %}\
+              {% if commit.breaking %}[**breaking**] {% endif %}\
+              {{ commit.message | upper_first }} ([{{ commit.id | truncate(length=7, end="") }}](https://github.com/amasotti/currency-api/commit/{{ commit.id }}))\
+      {% endif %}\
     {% endfor %}
 {% endfor %}\n
 """
@@ -43,7 +51,7 @@ postprocessors = [
 # parse the commits based on https://www.conventionalcommits.org
 conventional_commits = true
 # filter out the commits that are not conventional
-filter_unconventional = false
+filter_unconventional = true
 # process each line of a commit as an individual commit
 split_commits = false
 # regex for preprocessing the commit messages
@@ -87,6 +95,3 @@ topo_order = false
 sort_commits = "oldest"
 # limit the number of commits included in the changelog.
 # limit_commits = 42
-[remote.github]
-owner = "amasotti"
-repo = "currency-api"
