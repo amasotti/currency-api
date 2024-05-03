@@ -1,13 +1,9 @@
 name: Build and deploy
 on:
-  push:
-    branches:
-      - main
+  workflow_dispatch:
   pull_request:
     types:
       - opened
-      - synchronize
-      - reopened
 
 jobs:
   build-and-publish:
@@ -33,4 +29,22 @@ jobs:
         id: gradle
         run: |
           ./gradlew check --no-daemon --continue
+      - name: "🔧 Generate a changelog"
+        uses: orhun/git-cliff-action@v3
+        with:
+          config: cliff.toml
+          args: --verbose
+        env:
+          OUTPUT: CHANGELOG.md
+          GITHUB_REPO: ${{ github.repository }}
+
+      - name: Commit
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          set +e
+          git add CHANGELOG.md
+          git commit -m "Update changelog"
+          git push https://${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git main
+
       
