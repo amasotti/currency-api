@@ -1,6 +1,21 @@
 # Changelog
 
 Enjoy the magic of git cliff. All the git history of this repo in a beautified markdown format 🫶
+## [0.4.0] - 2024-05-03
+
+[Compare with last version](https://github.com/amasotti/currency-api/compare/be4365fcd0c4183787f19a01231fa3890198f1a8..1efa441368c55ccff1d68569360d313949e67352)
+### 🚀 Features
+
+
+- Add auto tag to the ci pipeline ([11bba8f](https://github.com/amasotti/currency-api/commit/11bba8f755f651a05a5766ec00546d49d12c3d8f))
+
+### 📚 Documentation
+
+
+- Update changelog with git cliff ([38aa8e6](https://github.com/amasotti/currency-api/commit/38aa8e62c9057c86b719a60ffbf491250b13ac2d))
+
+- Add badge to readme ([1efa441](https://github.com/amasotti/currency-api/commit/1efa441368c55ccff1d68569360d313949e67352))
+
 ## [0.3.2] - 2024-05-03
 
 [Compare with last version](https://github.com/amasotti/currency-api/compare/1978648a610741581853b94ef6f71e51ff3cf9bf..be4365fcd0c4183787f19a01231fa3890198f1a8)
