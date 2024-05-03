@@ -1,6 +1,14 @@
 # Changelog
 
 Enjoy the magic of git cliff. All the git history of this repo in a beautified markdown format 🫶
+## [0.3.2] - 2024-05-03
+
+[Compare with last version](https://github.com/amasotti/currency-api/compare/1978648a610741581853b94ef6f71e51ff3cf9bf..be4365fcd0c4183787f19a01231fa3890198f1a8)
+### ⚙️ Miscellaneous Tasks
+
+
+- Update readme.md ([83de120](https://github.com/amasotti/currency-api/commit/83de12081e54112b43ba37a748a387d9388e7ab2))
+
 ## [0.3.1] - 2024-05-03
 
 [Compare with last version](https://github.com/amasotti/currency-api/compare/e03298dedf2a140e10db3aa885be2a1bc4de1d62..1978648a610741581853b94ef6f71e51ff3cf9bf)
